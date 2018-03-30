@@ -1,0 +1,276 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.7"/>
+<title>Application template:  Fichier source de D:/creput/AUT14/gpu_work/popip/application_template/application/include/GeneticMethod.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Application template
+   &#160;<span id="projectnumber">version 1.1</span>
+   </div>
+  </td>
+   <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.7 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('_genetic_method_8h_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Espaces de nommage</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Définitions de type</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Énumérations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Valeurs énumérées</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Amis</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Groupes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">GeneticMethod.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_genetic_method_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef GENETICMETHOD_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define GENETICMETHOD_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> ***************************************************************************</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> * Auteur : J.C. Creput</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"> * Date creation : janvier 2015</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment"> ***************************************************************************</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;fstream&gt;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;iterator&gt;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_config_params_8h.html">ConfigParams.h</a>&quot;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_solution_object_8h.html">SolutionObject.h</a>&quot;</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_local_search_8h.html">LocalSearch.h</a>&quot;</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment">// INDIVIDUAL</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="class_individual.html">   21</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_individual.html">Individual</a>    {</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="class_individual.html#a8d3eba05f1f95ef1a9b2c8edf4534658">   23</a></span>&#160;    <a class="code" href="class_solution_object.html">SolutionObject</a>* <a class="code" href="class_individual.html#a8d3eba05f1f95ef1a9b2c8edf4534658">solution</a>;</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="class_individual.html#aa836a17c3f643f8b5d9032161c8a07ae">   24</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="class_individual.html#aa836a17c3f643f8b5d9032161c8a07ae">fitness</a>;</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="class_individual.html#a7db3f765cc1902195102e6ca883ae3b9">   25</a></span>&#160;    <a class="code" href="class_local_search.html">LocalSearch</a>* <a class="code" href="class_individual.html#a7db3f765cc1902195102e6ca883ae3b9">lS</a>;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <a class="code" href="class_individual.html#a375e27b7b7cac8008991b690e7967a0f">Individual</a>();</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <a class="code" href="class_individual.html#a375e27b7b7cac8008991b690e7967a0f">Individual</a>(<a class="code" href="class_solution_object.html">SolutionObject</a>* <a class="code" href="class_individual.html#a8d3eba05f1f95ef1a9b2c8edf4534658">solution</a>);</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <a class="code" href="class_individual.html#a2b0ff520b74b737ca610242936408bfc">~Individual</a>();</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_individual.html#a3aac629c8ffdf06068814d428586f479">initialize</a>(<a class="code" href="class_solution_object.html">SolutionObject</a>* <a class="code" href="class_individual.html#a8d3eba05f1f95ef1a9b2c8edf4534658">solution</a>);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_individual.html#a9bbfcaffd0fad84d0600b2e296bd6575">clone</a>(<a class="code" href="class_individual.html">Individual</a>* i);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_individual.html#a34cc51eb43186e0281b82836c2929ece">setIdentical</a>(<a class="code" href="class_individual.html">Individual</a>* indiv);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_individual.html#a76ffc8c4c33ca9f88eca375abaeec905">evaluate</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_individual.html#aadc96b4293a27d8b56c9078c225f35e9">computeFitness</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_individual.html#a34423da81ae4e77c2db0be4d13a4d1bf">generateGA</a>();</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_individual.html#a3a9ca46a8ba455d2199826ff9b29c0ff">generateMA</a>(<a class="code" href="class_solution_object.html">SolutionObject</a>* best, <span class="keywordtype">int</span> nb_iter);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_individual.html#a23fae46fbdb2e9c92f9dbfa7dccc010f">mutateGA_1</a>();</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_individual.html#ac2c5fe61a3d90179519751eb463cd0ba">mutateGA_2</a>();</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_individual.html#ad51bf011b2131e87856e86b9ad8247f9">mutateMA</a>(<a class="code" href="class_solution_object.html">SolutionObject</a>* bestConstruct, <span class="keywordtype">int</span> nb_iter, <a class="code" href="class_solution_object.html">SolutionObject</a>* bestImprove, <a class="code" href="class_solution_object.html">SolutionObject</a>* solutionMemo, <span class="keywordtype">int</span> nb_iiter);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_individual.html#aa331956a1dd8818291a35cd0adcef720">crossover</a>(<a class="code" href="class_individual.html">Individual</a>* i);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_individual.html#a3e2ca065d1dffba0b7004a6279ce6c39">localSearch</a>(<a class="code" href="class_solution_object.html">SolutionObject</a>* bestImprove, <a class="code" href="class_solution_object.html">SolutionObject</a>* solutionMemo, <span class="keywordtype">int</span> nb_iter);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;};</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="comment">// POPULATION</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="class_population.html">   51</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_population.html">Population</a>    {</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="class_population.html#a3b8094977c9c75ed544b211ef63089a5">   53</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_population.html#a3b8094977c9c75ed544b211ef63089a5">popSize</a>;</div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="class_population.html#a0e88e2cd73d3983343d95e7d40bbda46">   54</a></span>&#160;    <a class="code" href="class_individual.html">Individual</a>** <a class="code" href="class_population.html#a0e88e2cd73d3983343d95e7d40bbda46">indPool</a>;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <a class="code" href="class_population.html#a54eb24ca89470eebe0c27bcb03a0ceae">Population</a>();</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <a class="code" href="class_population.html#a4c8cedd0f038e41746fb6084639f5616">~Population</a>();</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_population.html#a6fe122fc593c90c03998acb374126d97">initialize</a>(<a class="code" href="class_individual.html">Individual</a>* i, <span class="keywordtype">int</span> n, <a class="code" href="class_config_params.html">ConfigParams</a>* params);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_population.html#a55eaea9d14ff42dd227e801711d912b4">clone</a>(<a class="code" href="class_population.html">Population</a>* p);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_population.html#accb3f991dd1e038ec1e5b8a3acfaf81d">getBestIndividual</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_population.html#accb3f991dd1e038ec1e5b8a3acfaf81d">getBestIndividual</a>(<a class="code" href="class_individual.html">Individual</a>* bestInd);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_population.html#acd75583002759538dfab91d503e37431">getWorstIndividual</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_population.html#a42361434a56dc6e3720cedfa001cc42f">evaluate</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_population.html#a08fc14949e09fed7252d8716c19ef2bd">generateGA</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_population.html#a9e65946477104a48eabf736939293ca5">generateMA</a>(<a class="code" href="class_solution_object.html">SolutionObject</a>* best, <span class="keywordtype">int</span> nb_iter);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_population.html#a5b4e6c348062cc02162fa87b34243f01">mutateGA_1</a>();</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_population.html#a2c2367ff47bd463e9b55ae7aab373001">mutateGA_2</a>();</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_population.html#a853ceebe5f1cb194545efddd433644f7">mutateMA</a>(<a class="code" href="class_solution_object.html">SolutionObject</a>* bestConstruct, <span class="keywordtype">int</span> nb_iter, <a class="code" href="class_solution_object.html">SolutionObject</a>* bestImprove, <a class="code" href="class_solution_object.html">SolutionObject</a>* solutionMemo, <span class="keywordtype">int</span> nb_iiter);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_population.html#a3c476909239429b876a52a828bbac9c2">crossover</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_population.html#a6550ce21e560180c53d9ccfb99a46997">localSearch</a>(<a class="code" href="class_solution_object.html">SolutionObject</a>* bestImprove, <a class="code" href="class_solution_object.html">SolutionObject</a>* solutionMemo, <span class="keywordtype">int</span> nb_iter);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_population.html#a8f3cb5a60611ec1a5aa88e16f138fd78">select</a>(<span class="keywordtype">int</span> size);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_population.html#a1d39d611cfab02b187004831b249e6cf">select_elit</a>(<a class="code" href="class_individual.html">Individual</a>* bestInd, <span class="keywordtype">int</span> size);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;};</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="comment">// ================================================</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="comment">// CLASS GENETICMETHOD</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="comment">// ================================================</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="class_genetic_method.html">   84</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_genetic_method.html">GeneticMethod</a> {</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="comment">// Données privees</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno"><a class="line" href="class_genetic_method.html#a249b49bae2fea6fc8c1ba499de0504c0">   86</a></span>&#160;    <a class="code" href="class_solution_object.html">SolutionObject</a>* <a class="code" href="class_genetic_method.html#a249b49bae2fea6fc8c1ba499de0504c0">solutionMemo</a>;</div>
+<div class="line"><a name="l00087"></a><span class="lineno"><a class="line" href="class_genetic_method.html#ab51bb64996c0f3d6a1eaf4c03bece10b">   87</a></span>&#160;    <a class="code" href="class_solution_object.html">SolutionObject</a>* <a class="code" href="class_genetic_method.html#ab51bb64996c0f3d6a1eaf4c03bece10b">bestImprove</a>;</div>
+<div class="line"><a name="l00088"></a><span class="lineno"><a class="line" href="class_genetic_method.html#a6b39d96c4b3309be3ee61dd137791da7">   88</a></span>&#160;    <a class="code" href="class_solution_object.html">SolutionObject</a>* <a class="code" href="class_genetic_method.html#a6b39d96c4b3309be3ee61dd137791da7">bestConstruct</a>;</div>
+<div class="line"><a name="l00089"></a><span class="lineno"><a class="line" href="class_genetic_method.html#ac5b07e692ae9b8ea77442ccc22638123">   89</a></span>&#160;    <a class="code" href="class_solution_object.html">SolutionObject</a>* <a class="code" href="class_genetic_method.html#ac5b07e692ae9b8ea77442ccc22638123">best</a>;</div>
+<div class="line"><a name="l00090"></a><span class="lineno"><a class="line" href="class_genetic_method.html#aca69ccc3af98c6fdddc38b347648b58c">   90</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_genetic_method.html#aca69ccc3af98c6fdddc38b347648b58c">nb_iter</a>;</div>
+<div class="line"><a name="l00091"></a><span class="lineno"><a class="line" href="class_genetic_method.html#abc086dae1ae8e0db1024ed0f170feb55">   91</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_genetic_method.html#abc086dae1ae8e0db1024ed0f170feb55">nb_iiter</a>;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
+<div class="line"><a name="l00093"></a><span class="lineno"><a class="line" href="class_genetic_method.html#a4c7a340306c67687b8c4a47e90b75996">   93</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_genetic_method.html#a4c7a340306c67687b8c4a47e90b75996">generation</a>;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
+<div class="line"><a name="l00095"></a><span class="lineno"><a class="line" href="class_genetic_method.html#ab9b158632a50743ae0bdb045a2ea5e0c">   95</a></span>&#160;    <a class="code" href="class_config_params.html">ConfigParams</a>* <a class="code" href="class_genetic_method.html#ab9b158632a50743ae0bdb045a2ea5e0c">params</a>;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
+<div class="line"><a name="l00097"></a><span class="lineno"><a class="line" href="class_genetic_method.html#a9959951a4fbba04c19bdbf0808845dd6">   97</a></span>&#160;    <a class="code" href="class_population.html">Population</a>* <a class="code" href="class_genetic_method.html#a9959951a4fbba04c19bdbf0808845dd6">pop</a>;</div>
+<div class="line"><a name="l00098"></a><span class="lineno"><a class="line" href="class_genetic_method.html#a17eb6dbbe399104e09a21a8438264d77">   98</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_genetic_method.html#a17eb6dbbe399104e09a21a8438264d77">bestIndNumber</a>; </div>
+<div class="line"><a name="l00099"></a><span class="lineno"><a class="line" href="class_genetic_method.html#a54380d1638a54ae0c0ab57de7dff81f3">   99</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_genetic_method.html#a54380d1638a54ae0c0ab57de7dff81f3">bestIndGeneration</a>; </div>
+<div class="line"><a name="l00100"></a><span class="lineno"><a class="line" href="class_genetic_method.html#a0df78ef57a68827204995ba3cfde7604">  100</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="class_genetic_method.html#a0df78ef57a68827204995ba3cfde7604">bestFit</a>; </div>
+<div class="line"><a name="l00101"></a><span class="lineno"><a class="line" href="class_genetic_method.html#a61a0307dde6413e1f2649ce689807a88">  101</a></span>&#160;    <a class="code" href="class_individual.html">Individual</a>* <a class="code" href="class_genetic_method.html#a61a0307dde6413e1f2649ce689807a88">bestInd</a>; </div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div>
+<div class="line"><a name="l00103"></a><span class="lineno"><a class="line" href="class_genetic_method.html#ad4633032d0a3c4bf4d95353b410ef5e3">  103</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_genetic_method.html#ad4633032d0a3c4bf4d95353b410ef5e3">bestIndNumberNeverEncountered</a>; </div>
+<div class="line"><a name="l00104"></a><span class="lineno"><a class="line" href="class_genetic_method.html#af5d1465eda9dc38f0d1d8df824b34dc2">  104</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_genetic_method.html#af5d1465eda9dc38f0d1d8df824b34dc2">bestIndGenerationNeverEncountered</a>; </div>
+<div class="line"><a name="l00105"></a><span class="lineno"><a class="line" href="class_genetic_method.html#a560328f6402cadccf01ac123a22b2325">  105</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="class_genetic_method.html#a560328f6402cadccf01ac123a22b2325">bestFitNeverEncountered</a>; </div>
+<div class="line"><a name="l00106"></a><span class="lineno"><a class="line" href="class_genetic_method.html#a14fe2f0dbafab7f8813bd9f7f672b64e">  106</a></span>&#160;    <a class="code" href="class_individual.html">Individual</a>* <a class="code" href="class_genetic_method.html#a14fe2f0dbafab7f8813bd9f7f672b64e">bestIndNeverEncountered</a>; </div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <a class="code" href="class_genetic_method.html#ac9782ad15e2cdead897365cea0fe677d">GeneticMethod</a>();</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <a class="code" href="class_genetic_method.html#a7497e13a0b57dc49ad672041193f74f6">~GeneticMethod</a>();</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_genetic_method.html#a1dc3cdbdddf5592749b02d72a5bd7a63">initialize</a>(<span class="keywordtype">char</span>* data, <span class="keywordtype">char</span>* sol, <span class="keywordtype">char</span>* stats, <a class="code" href="class_config_params.html">ConfigParams</a>* <a class="code" href="class_genetic_method.html#ab9b158632a50743ae0bdb045a2ea5e0c">params</a>);</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_genetic_method.html#aa201eba188f030fd1fd831a368bed582">run</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;};</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="preprocessor">#endif // GENETICMETHOD_H</span></div>
+<div class="ttc" id="class_population_html_a55eaea9d14ff42dd227e801711d912b4"><div class="ttname"><a href="class_population.html#a55eaea9d14ff42dd227e801711d912b4">Population::clone</a></div><div class="ttdeci">void clone(Population *p)</div><div class="ttdef"><b>Definition:</b> GeneticMethod.cpp:139</div></div>
+<div class="ttc" id="class_genetic_method_html_aca69ccc3af98c6fdddc38b347648b58c"><div class="ttname"><a href="class_genetic_method.html#aca69ccc3af98c6fdddc38b347648b58c">GeneticMethod::nb_iter</a></div><div class="ttdeci">int nb_iter</div><div class="ttdef"><b>Definition:</b> GeneticMethod.h:90</div></div>
+<div class="ttc" id="class_population_html_a2c2367ff47bd463e9b55ae7aab373001"><div class="ttname"><a href="class_population.html#a2c2367ff47bd463e9b55ae7aab373001">Population::mutateGA_2</a></div><div class="ttdeci">void mutateGA_2()</div><div class="ttdef"><b>Definition:</b> GeneticMethod.cpp:229</div></div>
+<div class="ttc" id="class_individual_html_ac2c5fe61a3d90179519751eb463cd0ba"><div class="ttname"><a href="class_individual.html#ac2c5fe61a3d90179519751eb463cd0ba">Individual::mutateGA_2</a></div><div class="ttdeci">void mutateGA_2()</div><div class="ttdef"><b>Definition:</b> GeneticMethod.cpp:82</div></div>
+<div class="ttc" id="class_genetic_method_html_ac9782ad15e2cdead897365cea0fe677d"><div class="ttname"><a href="class_genetic_method.html#ac9782ad15e2cdead897365cea0fe677d">GeneticMethod::GeneticMethod</a></div><div class="ttdeci">GeneticMethod()</div><div class="ttdoc">le meileur </div><div class="ttdef"><b>Definition:</b> GeneticMethod.cpp:339</div></div>
+<div class="ttc" id="class_individual_html_a2b0ff520b74b737ca610242936408bfc"><div class="ttname"><a href="class_individual.html#a2b0ff520b74b737ca610242936408bfc">Individual::~Individual</a></div><div class="ttdeci">~Individual()</div><div class="ttdef"><b>Definition:</b> GeneticMethod.cpp:33</div></div>
+<div class="ttc" id="class_genetic_method_html_a4c7a340306c67687b8c4a47e90b75996"><div class="ttname"><a href="class_genetic_method.html#a4c7a340306c67687b8c4a47e90b75996">GeneticMethod::generation</a></div><div class="ttdeci">int generation</div><div class="ttdef"><b>Definition:</b> GeneticMethod.h:93</div></div>
+<div class="ttc" id="class_genetic_method_html_a54380d1638a54ae0c0ab57de7dff81f3"><div class="ttname"><a href="class_genetic_method.html#a54380d1638a54ae0c0ab57de7dff81f3">GeneticMethod::bestIndGeneration</a></div><div class="ttdeci">int bestIndGeneration</div><div class="ttdoc">numero du meilleur indiv. rencontre </div><div class="ttdef"><b>Definition:</b> GeneticMethod.h:99</div></div>
+<div class="ttc" id="class_individual_html_aadc96b4293a27d8b56c9078c225f35e9"><div class="ttname"><a href="class_individual.html#aadc96b4293a27d8b56c9078c225f35e9">Individual::computeFitness</a></div><div class="ttdeci">void computeFitness(void)</div><div class="ttdef"><b>Definition:</b> GeneticMethod.cpp:57</div></div>
+<div class="ttc" id="class_population_html_a5b4e6c348062cc02162fa87b34243f01"><div class="ttname"><a href="class_population.html#a5b4e6c348062cc02162fa87b34243f01">Population::mutateGA_1</a></div><div class="ttdeci">void mutateGA_1()</div><div class="ttdef"><b>Definition:</b> GeneticMethod.cpp:216</div></div>
+<div class="ttc" id="class_individual_html_a3e2ca065d1dffba0b7004a6279ce6c39"><div class="ttname"><a href="class_individual.html#a3e2ca065d1dffba0b7004a6279ce6c39">Individual::localSearch</a></div><div class="ttdeci">void localSearch(SolutionObject *bestImprove, SolutionObject *solutionMemo, int nb_iter)</div><div class="ttdef"><b>Definition:</b> GeneticMethod.cpp:106</div></div>
+<div class="ttc" id="class_solution_object_html"><div class="ttname"><a href="class_solution_object.html">SolutionObject</a></div><div class="ttdoc">Classe principale qui definit la structure d&#39;une solution du problème. </div><div class="ttdef"><b>Definition:</b> SolutionObject.h:51</div></div>
+<div class="ttc" id="class_individual_html_a9bbfcaffd0fad84d0600b2e296bd6575"><div class="ttname"><a href="class_individual.html#a9bbfcaffd0fad84d0600b2e296bd6575">Individual::clone</a></div><div class="ttdeci">void clone(Individual *i)</div><div class="ttdef"><b>Definition:</b> GeneticMethod.cpp:42</div></div>
+<div class="ttc" id="_config_params_8h_html"><div class="ttname"><a href="_config_params_8h.html">ConfigParams.h</a></div></div>
+<div class="ttc" id="class_population_html_a9e65946477104a48eabf736939293ca5"><div class="ttname"><a href="class_population.html#a9e65946477104a48eabf736939293ca5">Population::generateMA</a></div><div class="ttdeci">void generateMA(SolutionObject *best, int nb_iter)</div><div class="ttdef"><b>Definition:</b> GeneticMethod.cpp:203</div></div>
+<div class="ttc" id="class_individual_html_ad51bf011b2131e87856e86b9ad8247f9"><div class="ttname"><a href="class_individual.html#ad51bf011b2131e87856e86b9ad8247f9">Individual::mutateMA</a></div><div class="ttdeci">void mutateMA(SolutionObject *bestConstruct, int nb_iter, SolutionObject *bestImprove, SolutionObject *solutionMemo, int nb_iiter)</div><div class="ttdef"><b>Definition:</b> GeneticMethod.cpp:89</div></div>
+<div class="ttc" id="class_individual_html_aa836a17c3f643f8b5d9032161c8a07ae"><div class="ttname"><a href="class_individual.html#aa836a17c3f643f8b5d9032161c8a07ae">Individual::fitness</a></div><div class="ttdeci">double fitness</div><div class="ttdef"><b>Definition:</b> GeneticMethod.h:24</div></div>
+<div class="ttc" id="class_individual_html_a3a9ca46a8ba455d2199826ff9b29c0ff"><div class="ttname"><a href="class_individual.html#a3a9ca46a8ba455d2199826ff9b29c0ff">Individual::generateMA</a></div><div class="ttdeci">void generateMA(SolutionObject *best, int nb_iter)</div><div class="ttdef"><b>Definition:</b> GeneticMethod.cpp:70</div></div>
+<div class="ttc" id="class_genetic_method_html_a14fe2f0dbafab7f8813bd9f7f672b64e"><div class="ttname"><a href="class_genetic_method.html#a14fe2f0dbafab7f8813bd9f7f672b64e">GeneticMethod::bestIndNeverEncountered</a></div><div class="ttdeci">Individual * bestIndNeverEncountered</div><div class="ttdoc">meilleure fitness rencontree </div><div class="ttdef"><b>Definition:</b> GeneticMethod.h:106</div></div>
+<div class="ttc" id="class_genetic_method_html_a7497e13a0b57dc49ad672041193f74f6"><div class="ttname"><a href="class_genetic_method.html#a7497e13a0b57dc49ad672041193f74f6">GeneticMethod::~GeneticMethod</a></div><div class="ttdeci">~GeneticMethod()</div><div class="ttdef"><b>Definition:</b> GeneticMethod.cpp:340</div></div>
+<div class="ttc" id="class_individual_html_a375e27b7b7cac8008991b690e7967a0f"><div class="ttname"><a href="class_individual.html#a375e27b7b7cac8008991b690e7967a0f">Individual::Individual</a></div><div class="ttdeci">Individual()</div><div class="ttdef"><b>Definition:</b> GeneticMethod.cpp:25</div></div>
+<div class="ttc" id="class_genetic_method_html_abc086dae1ae8e0db1024ed0f170feb55"><div class="ttname"><a href="class_genetic_method.html#abc086dae1ae8e0db1024ed0f170feb55">GeneticMethod::nb_iiter</a></div><div class="ttdeci">int nb_iiter</div><div class="ttdef"><b>Definition:</b> GeneticMethod.h:91</div></div>
+<div class="ttc" id="class_population_html_a42361434a56dc6e3720cedfa001cc42f"><div class="ttname"><a href="class_population.html#a42361434a56dc6e3720cedfa001cc42f">Population::evaluate</a></div><div class="ttdeci">void evaluate(void)</div><div class="ttdef"><b>Definition:</b> GeneticMethod.cpp:185</div></div>
+<div class="ttc" id="class_population_html_a54eb24ca89470eebe0c27bcb03a0ceae"><div class="ttname"><a href="class_population.html#a54eb24ca89470eebe0c27bcb03a0ceae">Population::Population</a></div><div class="ttdeci">Population()</div><div class="ttdef"><b>Definition:</b> GeneticMethod.cpp:117</div></div>
+<div class="ttc" id="class_individual_html_a23fae46fbdb2e9c92f9dbfa7dccc010f"><div class="ttname"><a href="class_individual.html#a23fae46fbdb2e9c92f9dbfa7dccc010f">Individual::mutateGA_1</a></div><div class="ttdeci">void mutateGA_1()</div><div class="ttdef"><b>Definition:</b> GeneticMethod.cpp:77</div></div>
+<div class="ttc" id="class_population_html_a3c476909239429b876a52a828bbac9c2"><div class="ttname"><a href="class_population.html#a3c476909239429b876a52a828bbac9c2">Population::crossover</a></div><div class="ttdeci">void crossover(void)</div></div>
+<div class="ttc" id="class_genetic_method_html_a17eb6dbbe399104e09a21a8438264d77"><div class="ttname"><a href="class_genetic_method.html#a17eb6dbbe399104e09a21a8438264d77">GeneticMethod::bestIndNumber</a></div><div class="ttdeci">int bestIndNumber</div><div class="ttdef"><b>Definition:</b> GeneticMethod.h:98</div></div>
+<div class="ttc" id="class_population_html_a853ceebe5f1cb194545efddd433644f7"><div class="ttname"><a href="class_population.html#a853ceebe5f1cb194545efddd433644f7">Population::mutateMA</a></div><div class="ttdeci">void mutateMA(SolutionObject *bestConstruct, int nb_iter, SolutionObject *bestImprove, SolutionObject *solutionMemo, int nb_iiter)</div><div class="ttdef"><b>Definition:</b> GeneticMethod.cpp:242</div></div>
+<div class="ttc" id="class_population_html_a8f3cb5a60611ec1a5aa88e16f138fd78"><div class="ttname"><a href="class_population.html#a8f3cb5a60611ec1a5aa88e16f138fd78">Population::select</a></div><div class="ttdeci">void select(int size)</div><div class="ttdef"><b>Definition:</b> GeneticMethod.cpp:271</div></div>
+<div class="ttc" id="class_config_params_html"><div class="ttname"><a href="class_config_params.html">ConfigParams</a></div><div class="ttdef"><b>Definition:</b> ConfigParams.h:25</div></div>
+<div class="ttc" id="class_population_html"><div class="ttname"><a href="class_population.html">Population</a></div><div class="ttdef"><b>Definition:</b> GeneticMethod.h:51</div></div>
+<div class="ttc" id="class_population_html_a4c8cedd0f038e41746fb6084639f5616"><div class="ttname"><a href="class_population.html#a4c8cedd0f038e41746fb6084639f5616">Population::~Population</a></div><div class="ttdeci">~Population()</div><div class="ttdef"><b>Definition:</b> GeneticMethod.cpp:118</div></div>
+<div class="ttc" id="class_genetic_method_html_a1dc3cdbdddf5592749b02d72a5bd7a63"><div class="ttname"><a href="class_genetic_method.html#a1dc3cdbdddf5592749b02d72a5bd7a63">GeneticMethod::initialize</a></div><div class="ttdeci">void initialize(char *data, char *sol, char *stats, ConfigParams *params)</div><div class="ttdef"><b>Definition:</b> GeneticMethod.cpp:342</div></div>
+<div class="ttc" id="class_genetic_method_html_a0df78ef57a68827204995ba3cfde7604"><div class="ttname"><a href="class_genetic_method.html#a0df78ef57a68827204995ba3cfde7604">GeneticMethod::bestFit</a></div><div class="ttdeci">double bestFit</div><div class="ttdoc">a la generation </div><div class="ttdef"><b>Definition:</b> GeneticMethod.h:100</div></div>
+<div class="ttc" id="class_individual_html_aa331956a1dd8818291a35cd0adcef720"><div class="ttname"><a href="class_individual.html#aa331956a1dd8818291a35cd0adcef720">Individual::crossover</a></div><div class="ttdeci">void crossover(Individual *i)</div><div class="ttdef"><b>Definition:</b> GeneticMethod.cpp:103</div></div>
+<div class="ttc" id="class_individual_html_a8d3eba05f1f95ef1a9b2c8edf4534658"><div class="ttname"><a href="class_individual.html#a8d3eba05f1f95ef1a9b2c8edf4534658">Individual::solution</a></div><div class="ttdeci">SolutionObject * solution</div><div class="ttdef"><b>Definition:</b> GeneticMethod.h:23</div></div>
+<div class="ttc" id="class_genetic_method_html_a9959951a4fbba04c19bdbf0808845dd6"><div class="ttname"><a href="class_genetic_method.html#a9959951a4fbba04c19bdbf0808845dd6">GeneticMethod::pop</a></div><div class="ttdeci">Population * pop</div><div class="ttdef"><b>Definition:</b> GeneticMethod.h:97</div></div>
+<div class="ttc" id="_solution_object_8h_html"><div class="ttname"><a href="_solution_object_8h.html">SolutionObject.h</a></div></div>
+<div class="ttc" id="class_individual_html"><div class="ttname"><a href="class_individual.html">Individual</a></div><div class="ttdef"><b>Definition:</b> GeneticMethod.h:21</div></div>
+<div class="ttc" id="class_local_search_html"><div class="ttname"><a href="class_local_search.html">LocalSearch</a></div><div class="ttdef"><b>Definition:</b> LocalSearch.h:19</div></div>
+<div class="ttc" id="class_genetic_method_html_ab51bb64996c0f3d6a1eaf4c03bece10b"><div class="ttname"><a href="class_genetic_method.html#ab51bb64996c0f3d6a1eaf4c03bece10b">GeneticMethod::bestImprove</a></div><div class="ttdeci">SolutionObject * bestImprove</div><div class="ttdef"><b>Definition:</b> GeneticMethod.h:87</div></div>
+<div class="ttc" id="class_individual_html_a3aac629c8ffdf06068814d428586f479"><div class="ttname"><a href="class_individual.html#a3aac629c8ffdf06068814d428586f479">Individual::initialize</a></div><div class="ttdeci">void initialize(SolutionObject *solution)</div><div class="ttdef"><b>Definition:</b> GeneticMethod.cpp:38</div></div>
+<div class="ttc" id="class_individual_html_a7db3f765cc1902195102e6ca883ae3b9"><div class="ttname"><a href="class_individual.html#a7db3f765cc1902195102e6ca883ae3b9">Individual::lS</a></div><div class="ttdeci">LocalSearch * lS</div><div class="ttdef"><b>Definition:</b> GeneticMethod.h:25</div></div>
+<div class="ttc" id="class_genetic_method_html"><div class="ttname"><a href="class_genetic_method.html">GeneticMethod</a></div><div class="ttdef"><b>Definition:</b> GeneticMethod.h:84</div></div>
+<div class="ttc" id="class_population_html_a3b8094977c9c75ed544b211ef63089a5"><div class="ttname"><a href="class_population.html#a3b8094977c9c75ed544b211ef63089a5">Population::popSize</a></div><div class="ttdeci">int popSize</div><div class="ttdef"><b>Definition:</b> GeneticMethod.h:53</div></div>
+<div class="ttc" id="class_individual_html_a76ffc8c4c33ca9f88eca375abaeec905"><div class="ttname"><a href="class_individual.html#a76ffc8c4c33ca9f88eca375abaeec905">Individual::evaluate</a></div><div class="ttdeci">void evaluate(void)</div><div class="ttdef"><b>Definition:</b> GeneticMethod.cpp:52</div></div>
+<div class="ttc" id="class_genetic_method_html_ab9b158632a50743ae0bdb045a2ea5e0c"><div class="ttname"><a href="class_genetic_method.html#ab9b158632a50743ae0bdb045a2ea5e0c">GeneticMethod::params</a></div><div class="ttdeci">ConfigParams * params</div><div class="ttdef"><b>Definition:</b> GeneticMethod.h:95</div></div>
+<div class="ttc" id="class_population_html_a1d39d611cfab02b187004831b249e6cf"><div class="ttname"><a href="class_population.html#a1d39d611cfab02b187004831b249e6cf">Population::select_elit</a></div><div class="ttdeci">void select_elit(Individual *bestInd, int size)</div><div class="ttdef"><b>Definition:</b> GeneticMethod.cpp:310</div></div>
+<div class="ttc" id="class_genetic_method_html_ac5b07e692ae9b8ea77442ccc22638123"><div class="ttname"><a href="class_genetic_method.html#ac5b07e692ae9b8ea77442ccc22638123">GeneticMethod::best</a></div><div class="ttdeci">SolutionObject * best</div><div class="ttdef"><b>Definition:</b> GeneticMethod.h:89</div></div>
+<div class="ttc" id="class_population_html_a0e88e2cd73d3983343d95e7d40bbda46"><div class="ttname"><a href="class_population.html#a0e88e2cd73d3983343d95e7d40bbda46">Population::indPool</a></div><div class="ttdeci">Individual ** indPool</div><div class="ttdef"><b>Definition:</b> GeneticMethod.h:54</div></div>
+<div class="ttc" id="_local_search_8h_html"><div class="ttname"><a href="_local_search_8h.html">LocalSearch.h</a></div></div>
+<div class="ttc" id="class_genetic_method_html_a6b39d96c4b3309be3ee61dd137791da7"><div class="ttname"><a href="class_genetic_method.html#a6b39d96c4b3309be3ee61dd137791da7">GeneticMethod::bestConstruct</a></div><div class="ttdeci">SolutionObject * bestConstruct</div><div class="ttdef"><b>Definition:</b> GeneticMethod.h:88</div></div>
+<div class="ttc" id="class_population_html_acd75583002759538dfab91d503e37431"><div class="ttname"><a href="class_population.html#acd75583002759538dfab91d503e37431">Population::getWorstIndividual</a></div><div class="ttdeci">int getWorstIndividual(void)</div><div class="ttdef"><b>Definition:</b> GeneticMethod.cpp:170</div></div>
+<div class="ttc" id="class_genetic_method_html_aa201eba188f030fd1fd831a368bed582"><div class="ttname"><a href="class_genetic_method.html#aa201eba188f030fd1fd831a368bed582">GeneticMethod::run</a></div><div class="ttdeci">void run(void)</div><div class="ttdef"><b>Definition:</b> GeneticMethod.cpp:410</div></div>
+<div class="ttc" id="class_genetic_method_html_a61a0307dde6413e1f2649ce689807a88"><div class="ttname"><a href="class_genetic_method.html#a61a0307dde6413e1f2649ce689807a88">GeneticMethod::bestInd</a></div><div class="ttdeci">Individual * bestInd</div><div class="ttdoc">meilleure fitness rencontree </div><div class="ttdef"><b>Definition:</b> GeneticMethod.h:101</div></div>
+<div class="ttc" id="class_individual_html_a34423da81ae4e77c2db0be4d13a4d1bf"><div class="ttname"><a href="class_individual.html#a34423da81ae4e77c2db0be4d13a4d1bf">Individual::generateGA</a></div><div class="ttdeci">void generateGA()</div><div class="ttdef"><b>Definition:</b> GeneticMethod.cpp:64</div></div>
+<div class="ttc" id="class_population_html_a6fe122fc593c90c03998acb374126d97"><div class="ttname"><a href="class_population.html#a6fe122fc593c90c03998acb374126d97">Population::initialize</a></div><div class="ttdeci">void initialize(Individual *i, int n, ConfigParams *params)</div><div class="ttdef"><b>Definition:</b> GeneticMethod.cpp:120</div></div>
+<div class="ttc" id="class_genetic_method_html_a560328f6402cadccf01ac123a22b2325"><div class="ttname"><a href="class_genetic_method.html#a560328f6402cadccf01ac123a22b2325">GeneticMethod::bestFitNeverEncountered</a></div><div class="ttdeci">double bestFitNeverEncountered</div><div class="ttdoc">a la generation </div><div class="ttdef"><b>Definition:</b> GeneticMethod.h:105</div></div>
+<div class="ttc" id="class_population_html_accb3f991dd1e038ec1e5b8a3acfaf81d"><div class="ttname"><a href="class_population.html#accb3f991dd1e038ec1e5b8a3acfaf81d">Population::getBestIndividual</a></div><div class="ttdeci">int getBestIndividual(void)</div><div class="ttdef"><b>Definition:</b> GeneticMethod.cpp:154</div></div>
+<div class="ttc" id="class_genetic_method_html_af5d1465eda9dc38f0d1d8df824b34dc2"><div class="ttname"><a href="class_genetic_method.html#af5d1465eda9dc38f0d1d8df824b34dc2">GeneticMethod::bestIndGenerationNeverEncountered</a></div><div class="ttdeci">int bestIndGenerationNeverEncountered</div><div class="ttdoc">numero du meilleur indiv. rencontre </div><div class="ttdef"><b>Definition:</b> GeneticMethod.h:104</div></div>
+<div class="ttc" id="class_genetic_method_html_a249b49bae2fea6fc8c1ba499de0504c0"><div class="ttname"><a href="class_genetic_method.html#a249b49bae2fea6fc8c1ba499de0504c0">GeneticMethod::solutionMemo</a></div><div class="ttdeci">SolutionObject * solutionMemo</div><div class="ttdef"><b>Definition:</b> GeneticMethod.h:86</div></div>
+<div class="ttc" id="class_genetic_method_html_ad4633032d0a3c4bf4d95353b410ef5e3"><div class="ttname"><a href="class_genetic_method.html#ad4633032d0a3c4bf4d95353b410ef5e3">GeneticMethod::bestIndNumberNeverEncountered</a></div><div class="ttdeci">int bestIndNumberNeverEncountered</div><div class="ttdoc">le meilleur </div><div class="ttdef"><b>Definition:</b> GeneticMethod.h:103</div></div>
+<div class="ttc" id="class_population_html_a6550ce21e560180c53d9ccfb99a46997"><div class="ttname"><a href="class_population.html#a6550ce21e560180c53d9ccfb99a46997">Population::localSearch</a></div><div class="ttdeci">void localSearch(SolutionObject *bestImprove, SolutionObject *solutionMemo, int nb_iter)</div><div class="ttdef"><b>Definition:</b> GeneticMethod.cpp:255</div></div>
+<div class="ttc" id="class_individual_html_a34cc51eb43186e0281b82836c2929ece"><div class="ttname"><a href="class_individual.html#a34cc51eb43186e0281b82836c2929ece">Individual::setIdentical</a></div><div class="ttdeci">void setIdentical(Individual *indiv)</div><div class="ttdef"><b>Definition:</b> GeneticMethod.cpp:47</div></div>
+<div class="ttc" id="class_population_html_a08fc14949e09fed7252d8716c19ef2bd"><div class="ttname"><a href="class_population.html#a08fc14949e09fed7252d8716c19ef2bd">Population::generateGA</a></div><div class="ttdeci">void generateGA(void)</div><div class="ttdef"><b>Definition:</b> GeneticMethod.cpp:190</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_d75c23162a2652451dce46d2e7e8aead.html">application</a></li><li class="navelem"><a class="el" href="dir_1739a576dd23e469777f5ac20497208e.html">include</a></li><li class="navelem"><a class="el" href="_genetic_method_8h.html">GeneticMethod.h</a></li>
+    <li class="footer">Généré le Mercredi 14 Janvier 2015 16:38:38 pour Application template par
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
+  </ul>
+</div>
+</body>
+</html>

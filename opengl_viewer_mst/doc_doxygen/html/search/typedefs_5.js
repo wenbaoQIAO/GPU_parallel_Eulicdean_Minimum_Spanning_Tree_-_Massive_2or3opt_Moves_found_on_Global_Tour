@@ -1,0 +1,5 @@
+var searchData=
+[
+  ['transformation_5f2',['Transformation_2',['../geometry__common_8h.html#adb394f1633b8ec06995d3d9e23b17028',1,'Transformation_2():&#160;geometry_common.h'],['../namespacegeometry__prop.html#a23a1232adf9085799eebd71fa1e88d04',1,'geometry_prop::Transformation_2()']]],
+  ['type',['type',['../structboost_1_1geometry_1_1traits_1_1tag_3_01geometry__prop_1_1_point_01_4.html#a772ef21bd3d474291464284af2b3aa93',1,'boost::geometry::traits::tag&lt; geometry_prop::Point &gt;::type()'],['../structboost_1_1geometry_1_1traits_1_1coordinate__type_3_01geometry__prop_1_1_point_01_4.html#ac57225ba011cdcf6aea7590b61526746',1,'boost::geometry::traits::coordinate_type&lt; geometry_prop::Point &gt;::type()'],['../structboost_1_1geometry_1_1traits_1_1coordinate__system_3_01geometry__prop_1_1_point_01_4.html#a6e52d827be719a3bcbfb7301f321afb3',1,'boost::geometry::traits::coordinate_system&lt; geometry_prop::Point &gt;::type()'],['../structgeometry__prop_1_1gather__segment__to__vector.html#a1d85ea080b10f0920caa41b028cc1324',1,'geometry_prop::gather_segment_to_vector::type()']]]
+];
